@@ -102,7 +102,7 @@ def rodar_eterno():
 
 # Criação da janela
 janela = customtkinter.CTk()
-janela.geometry("650x450")
+janela.geometry("350x350")
 janela.title("WyllyCliker")
 
 # Criação do Entry
@@ -127,10 +127,10 @@ posicao_label.place(x=20, y=90)
 
 delay_rodar_eterno = customtkinter.CTkEntry(janela, width=110, height=30, validate="key",
                                             validatecommand=(validacao_numeros, "%S"))
-delay_rodar_eterno.place(x=20, y=260)
+delay_rodar_eterno.place(x=20, y=280)
 delay_rodar_eterno_label = customtkinter.CTkLabel(janela, text="Delay para Iniciar novamente\nColoque em segundos",
                                                   justify="left")
-delay_rodar_eterno_label.place(x=140, y=260)
+delay_rodar_eterno_label.place(x=140, y=280)
 
 checkbox = customtkinter.CTkCheckBox(janela, text="Rodar Eternamente", onvalue="infinito", offvalue="finito")
 checkbox.place(x=190, y=210)
